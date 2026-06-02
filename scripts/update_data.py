@@ -1,9 +1,12 @@
 """
 Actualiza los datos operativos para Portus Total Operativo.
-
-Este script está pensado para ejecutarse desde GitHub Actions cada 3 horas.
-Render no debe llamar a ECMWF por cada visita: la web solo lee data/processed/latest.json.
 """
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
+
 from app import build_operational_dataset
 
 if __name__ == "__main__":
