@@ -1,0 +1,122 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Portus Total | Bahía de Palma</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="shell">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">PORTUS · PALMA 3851 · ECMWF IFS</p>
+        <h1>Nivel total del mar · Bahía de Palma</h1>
+        <p class="subtitle">Marea astronómica + marea meteorológica + comparación con mareógrafo real.</p>
+      </div>
+      <div class="brand-card">
+        <span class="live-dot"></span>
+        <span id="generatedAt">Calculando...</span>
+      </div>
+    </header>
+
+    <section id="loader" class="loader-card">
+      <div class="loader-top">
+        <div>
+          <h2>Actualizando modelo operativo</h2>
+          <p id="loaderText">Preparando descarga...</p>
+        </div>
+        <div id="loaderPct" class="pct">0%</div>
+      </div>
+      <div class="bar"><div id="barFill"></div></div>
+      <div class="steps">
+        <span>ECMWF</span>
+        <span>Modelo η_met</span>
+        <span>Astronómica</span>
+        <span>PORTUS</span>
+        <span>Resultado</span>
+      </div>
+      <p class="hint">La primera carga puede tardar varios minutos si descarga GRIBs nuevos.</p>
+    </section>
+
+    <section id="errorBox" class="error hidden"></section>
+
+    <main id="dashboard" class="hidden">
+      <section class="cards">
+        <article class="card primary">
+          <span class="label">Nivel total actual</span>
+          <strong id="totalCm">—</strong>
+          <small>cm · Cero REDMAR</small>
+        </article>
+        <article class="card">
+          <span class="label">Astronómica</span>
+          <strong id="astroCm">—</strong>
+          <small>cm</small>
+        </article>
+        <article class="card">
+          <span class="label">Meteorológica</span>
+          <strong id="meteoCm">—</strong>
+          <small>cm</small>
+        </article>
+        <article class="card">
+          <span class="label">Mareógrafo PORTUS</span>
+          <strong id="portusCm">—</strong>
+          <small>cm</small>
+        </article>
+      </section>
+
+      <section class="split">
+        <article class="panel">
+          <div class="panel-head">
+            <h2>Evolución horaria</h2>
+            <span id="period">—</span>
+          </div>
+          <canvas id="chart" height="120"></canvas>
+        </article>
+
+        <aside class="panel compact">
+          <h2>Resumen operativo</h2>
+          <div class="tide-box">
+            <span>Próxima pleamar</span>
+            <strong id="nextHigh">—</strong>
+            <small id="nextHighVal">—</small>
+          </div>
+          <div class="tide-box">
+            <span>Próxima bajamar</span>
+            <strong id="nextLow">—</strong>
+            <small id="nextLowVal">—</small>
+          </div>
+          <div class="note">
+            Histórico y forecast se separan por la hora actual del servidor.
+          </div>
+        </aside>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head">
+          <h2>Tabla horaria</h2>
+          <span>cm · Cero REDMAR</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Fecha</th>
+                <th>Total</th>
+                <th>Astro</th>
+                <th>Meteo</th>
+                <th>Fuente</th>
+              </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
