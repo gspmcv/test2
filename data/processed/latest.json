@@ -1,14 +1,14 @@
 {
-  "generated_at": "02-06-2026 14:55 Madrid",
+  "generated_at": "02-06-2026 20:59 Madrid",
   "period": {
     "start": "02-06-2026 00:00",
     "end": "07-06-2026 00:00"
   },
   "cards": {
-    "total_cm": -15.0,
-    "astro_cm": -17.2,
-    "meteo_cm": 2.2,
-    "portus_cm": -7.5,
+    "total_cm": -0.9,
+    "astro_cm": -3.7,
+    "meteo_cm": 2.8,
+    "portus_cm": -11.9,
     "next_high_time": "02-06 21h",
     "next_high_cm": -0.1,
     "next_low_time": "03-06 13h",
@@ -646,12 +646,12 @@
       "historico",
       "historico",
       "historico",
-      "forecast",
-      "forecast",
-      "forecast",
-      "forecast",
-      "forecast",
-      "forecast",
+      "historico",
+      "historico",
+      "historico",
+      "historico",
+      "historico",
+      "historico",
       "forecast",
       "forecast",
       "forecast",
@@ -808,7 +808,13 @@
       "02-06 03h",
       "02-06 04h",
       "02-06 05h",
-      "02-06 06h"
+      "02-06 06h",
+      "02-06 07h",
+      "02-06 08h",
+      "02-06 09h",
+      "02-06 10h",
+      "02-06 11h",
+      "02-06 12h"
     ],
     "mareo_cm": [
       -8.1,
@@ -865,7 +871,13 @@
       -7.2,
       -7.4,
       -7.3,
-      -7.5
+      -7.5,
+      -7.4,
+      -7.0,
+      -8.3,
+      -10.4,
+      -11.3,
+      -11.9
     ]
   },
   "table": [
@@ -979,42 +991,42 @@
       "total": -13.7,
       "astro": -16.2,
       "meteo": 2.4,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "02-06 16h",
       "total": -11.6,
       "astro": -14.2,
       "meteo": 2.6,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "02-06 17h",
       "total": -8.8,
       "astro": -11.6,
       "meteo": 2.8,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "02-06 18h",
       "total": -5.7,
       "astro": -8.6,
       "meteo": 2.9,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "02-06 19h",
       "total": -2.9,
       "astro": -5.8,
       "meteo": 2.9,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "02-06 20h",
       "total": -0.9,
       "astro": -3.7,
       "meteo": 2.8,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "02-06 21h",
