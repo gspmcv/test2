@@ -1,4 +1,3 @@
-
 :root{
   --bg:#eef4f8;
   --ink:#102033;
@@ -115,3 +114,17 @@ td:last-child{text-transform:uppercase;font-size:12px;font-weight:800;color:var(
   .cards{grid-template-columns:1fr}
   .steps{display:none}
 }
+
+/* ---- Aviso legal ---- */
+.aviso-legal{
+  margin:2rem auto;
+  max-width:900px;
+  padding:1.2rem 1.8rem;
+  background:rgba(180,30,30,.08);
+  border-left:4px solid #b41e1e;
+  border-radius:8px;
+  font-size:0.88rem;
+  color:#333;
+  line-height:1.6;
+}
+.aviso-legal p{margin:0.3rem 0;}
