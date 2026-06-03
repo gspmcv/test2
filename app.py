@@ -345,7 +345,7 @@ def combinar(job_id, df_meteo, df_astro, df_mareo):
             "total_cm": clean(current.total_cm),
             "astro_cm": clean(current.astro_cm),
             "meteo_cm": clean(current.eta_met_cm),
-            "portus_cm": clean(df_mareo.sealevel_cm.iloc[-1]) if not df_mareo.empty else None,
+            "galibo_cm": clean(current.galibo_cm),
             "next_high_time": next_high.time.strftime("%d-%m %Hh") if next_high is not None else "—",
             "next_high_cm": clean(next_high.total_cm) if next_high is not None else None,
             "next_low_time": next_low.time.strftime("%d-%m %Hh") if next_low is not None else "—",
