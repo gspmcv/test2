@@ -46,6 +46,7 @@ A_V = float(os.getenv("A_V", "3.5e-4"))
 K_IB = float(os.getenv("K_IB", "0.93"))
 ALPHA = float(os.getenv("ALPHA", "0.9"))
 P_REF = float(os.getenv("P_REF", "1015.5"))
+COTA_GALIBO_M = float(os.getenv("COTA_GALIBO_M", "2.00"))
 
 PORTUS_API_BASE = "https://poem.puertos.es/portus/ObservedHourlyLevel"
 PORTUS_STATION_CODE = 3851
@@ -302,6 +303,8 @@ def combinar(job_id, df_meteo, df_astro, df_mareo):
     df["fuente"] = np.where(df["time"] <= ahora, "historico", "forecast")
     df["total_m"] = df["eta_met"] + df["astro_m"]
     df["total_cm"] = df["total_m"] * 100
+    df["galibo_m"] = COTA_GALIBO_M - df["total_m"]
+    df["galibo_cm"] = df["galibo_m"] * 100
     df["residuo_m"] = df["eta_met"]
     df["residuo_cm"] = df["eta_met_cm"]
 
@@ -364,6 +367,7 @@ def combinar(job_id, df_meteo, df_astro, df_mareo):
                 "total": clean(r.total_cm),
                 "astro": clean(r.astro_cm),
                 "meteo": clean(r.eta_met_cm),
+                "galibo": clean(r.galibo_cm),
                 "fuente": r.fuente,
             }
             for _, r in df.head(160).iterrows()
