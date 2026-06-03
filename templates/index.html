@@ -10,13 +10,14 @@
 </head>
 <body>
   <div class="shell">
-    <header class="hero">
-      <div>
+    <header class="hero" style="background-image: url('/static/canbarbara.jpg'); background-size: cover; background-position: center; position: relative;">
+      <div style="position:absolute; inset:0; background:rgba(10,40,80,0.65); border-radius: inherit;"></div>
+      <div style="position:relative; z-index:1;">
         <p class="eyebrow">PORTUS · PALMA 3851 · ECMWF IFS</p>
         <h1>Nivel total del mar · Bahía de Palma</h1>
         <p class="subtitle">Marea astronómica + marea meteorológica + comparación con mareógrafo real.</p>
       </div>
-      <div class="brand-card">
+      <div class="brand-card" style="position:relative; z-index:1;">
         <span class="live-dot"></span>
         <span id="generatedAt">Calculando...</span>
       </div>
@@ -115,6 +116,13 @@
         </div>
       </section>
     </main>
+
+    <footer class="aviso-legal">
+      <p><strong>IMPORTANTE</strong></p>
+      <p>Los valores de gálibo mostrados son <em>orientativos</em> y se basan en una previsión sujeta a <em>incertidumbre</em>.</p>
+      <p>La decisión final sobre el paso de la embarcación es <strong>responsabilidad exclusiva del patrón</strong>, quien debe valorar el air draft de su embarcación, las condiciones meteorológicas y marítimas del momento, así como cualquier otro factor relevante para la maniobra.</p>
+    </footer>
+
   </div>
 
   <script src="/static/app.js"></script>
