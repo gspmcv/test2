@@ -60,6 +60,7 @@ function render(data){
       <td>${fmt(r.total)}</td>
       <td>${fmt(r.astro)}</td>
       <td>${fmt(r.meteo)}</td>
+      <td>${fmt(r.galibo)}</td>
       <td>${r.fuente}</td>
     `;
     tbody.appendChild(tr);
