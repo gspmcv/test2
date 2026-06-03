@@ -385,6 +385,34 @@ def load_latest_result():
         )
     return json.loads(path.read_text(encoding="utf-8"))
 
+def with_current_cards(result):
+    now = datetime.now(LOCAL_TZ).replace(minute=0, second=0, microsecond=0)
+    now_label = now.strftime("%d-%m %Hh")
+
+    times = result["series"]["time"]
+
+    if now_label in times:
+        i = times.index(now_label)
+    else:
+        # fallback: si no coincide exacto, coge el punto más cercano
+        iso_times = [
+            datetime.strptime(t, "%Y-%m-%d %H:%M")
+            for t in result["series"].get("iso", [])
+        ]
+        i = min(range(len(iso_times)), key=lambda k: abs(iso_times[k] - now.replace(tzinfo=None)))
+
+    result["cards"]["total_cm"] = result["series"]["total_cm"][i]
+    result["cards"]["astro_cm"] = result["series"]["astro_cm"][i]
+    result["cards"]["meteo_cm"] = result["series"]["meteo_cm"][i]
+
+    mareo_times = result["series"].get("mareo_time", [])
+    mareo_vals = result["series"].get("mareo_cm", [])
+    if now_label in mareo_times:
+        result["cards"]["portus_cm"] = mareo_vals[mareo_times.index(now_label)]
+
+    result["cards"]["current_time"] = now_label
+    return result
+
 
 def save_latest_result(result):
     PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
@@ -454,7 +482,7 @@ def api_start():
     """
     job_id = uuid.uuid4().hex
     try:
-        result = load_latest_result()
+        result = with_current_cards(load_latest_result())
         set_job(job_id, status="done", progress=100, message="Datos cargados.", result=result)
     except Exception as e:
         set_job(job_id, status="error", progress=100, message=str(e), error=str(e))
@@ -464,7 +492,7 @@ def api_start():
 @app.route("/api/latest")
 def api_latest():
     try:
-        return jsonify(load_latest_result())
+        return jsonify(with_current_cards(load_latest_result()))
     except Exception as e:
         return jsonify({"error": str(e)}), 503
 
