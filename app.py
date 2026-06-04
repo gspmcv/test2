@@ -357,7 +357,7 @@ def combinar(job_id, df_meteo, df_astro, df_mareo):
             "total_cm": [clean(v) for v in df.total_cm],
             "astro_cm": [clean(v) for v in df.astro_cm],
             "meteo_cm": [clean(v) for v in df.eta_met_cm],
-            "galibo_cm": [clean(v) for v in df.galibo_cm],
+            
             "fuente": df.fuente.tolist(),
             "mareo_time": [t.strftime("%d-%m %Hh") for t in df_mareo.time] if not df_mareo.empty else [],
             "mareo_cm": [clean(v) for v in df_mareo.sealevel_cm] if not df_mareo.empty else [],
