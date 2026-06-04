@@ -446,21 +446,24 @@ def limpiar_cache_antigua(max_age_hours=36):
 
 
 def build_operational_dataset(job_id="github-action"):
-    """
-    Ejecuta el cálculo pesado.
-    Esto lo debe llamar GitHub Actions cada 3 horas, no Render por cada visita.
-    """
-    set_job(job_id, status="running", progress=2, message="Arrancando cálculo operativo...")
+    ...
     df_ecmwf = descargar_ecmwf(job_id)
     df_meteo = calcular_modelo_meteo(job_id, df_ecmwf)
     df_astro = leer_astro(job_id)
-    hoy = datetime.now(LOCAL_TZ).replace(hour=0, minute=0, second=0, microsecond=0, tzinfo=None)
-    df_mareo = cargar_mareografo(job_id, hoy, n_dias=3)
+
+    hoy = datetime.now(LOCAL_TZ).replace(
+        hour=0, minute=0, second=0, microsecond=0, tzinfo=None
+    )
+
+    try:
+        df_mareo = cargar_mareografo(job_id, hoy, n_dias=3)
+    except Exception as e:
+        print(f"PORTUS no disponible: {e}")
+        df_mareo = pd.DataFrame(
+            columns=["time", "sealevel_m", "sealevel_cm", "residual_m", "residual_cm"]
+        )
+
     result = combinar(job_id, df_meteo, df_astro, df_mareo)
-    save_latest_result(result)
-    limpiar_cache_antigua(max_age_hours=int(os.getenv("CACHE_MAX_AGE_HOURS", "36")))
-    set_job(job_id, status="done", progress=100, message="Listo.", result=result)
-    return result
 
 
 def run_job(job_id):
