@@ -46,7 +46,8 @@ A_V = float(os.getenv("A_V", "3.5e-4"))
 K_IB = float(os.getenv("K_IB", "0.93"))
 ALPHA = float(os.getenv("ALPHA", "0.9"))
 P_REF = float(os.getenv("P_REF", "1015.5"))
-COTA_GALIBO_M = float(os.getenv("COTA_GALIBO_M", "2.00"))
+COTA_GALIBO_ENTRADA_M = float(os.getenv("COTA_GALIBO_ENTRADA_M", "1.483"))
+COTA_GALIBO_SALIDA_M = float(os.getenv("COTA_GALIBO_SALIDA_M", "1.474"))
 
 PORTUS_API_BASE = "https://poem.puertos.es/portus/ObservedHourlyLevel"
 PORTUS_STATION_CODE = 3851
@@ -303,8 +304,12 @@ def combinar(job_id, df_meteo, df_astro, df_mareo):
     df["fuente"] = np.where(df["time"] <= ahora, "historico", "forecast")
     df["total_m"] = df["eta_met"] + df["astro_m"]
     df["total_cm"] = df["total_m"] * 100
-    df["galibo_m"] = COTA_GALIBO_M - df["total_m"]
-    df["galibo_cm"] = df["galibo_m"] * 100
+    df["galibo_entrada_m"] = COTA_GALIBO_ENTRADA_M - df["total_m"]
+    df["galibo_entrada_cm"] = df["galibo_entrada_m"] * 100
+    
+    df["galibo_salida_m"] = COTA_GALIBO_SALIDA_M - df["total_m"]
+    df["galibo_salida_cm"] = df["galibo_salida_m"] * 100
+    
     df["residuo_m"] = df["eta_met"]
     df["residuo_cm"] = df["eta_met_cm"]
 
@@ -345,7 +350,8 @@ def combinar(job_id, df_meteo, df_astro, df_mareo):
             "total_cm": clean(current.total_cm),
             "astro_cm": clean(current.astro_cm),
             "meteo_cm": clean(current.eta_met_cm),
-            "galibo_cm": clean(current.galibo_cm),
+            "galibo_entrada_m": clean(current.galibo_entrada_m,3),
+            "galibo_salida_m": clean(current.galibo_salida_m,3),
             "next_high_time": next_high.time.strftime("%d-%m %Hh") if next_high is not None else "—",
             "next_high_cm": clean(next_high.total_cm) if next_high is not None else None,
             "next_low_time": next_low.time.strftime("%d-%m %Hh") if next_low is not None else "—",
@@ -357,7 +363,8 @@ def combinar(job_id, df_meteo, df_astro, df_mareo):
             "total_cm": [clean(v) for v in df.total_cm],
             "astro_cm": [clean(v) for v in df.astro_cm],
             "meteo_cm": [clean(v) for v in df.eta_met_cm],
-            "galibo_cm": [clean(v) for v in df.galibo_cm],
+            "galibo_entrada_m": [clean(v,3) for v in df.galibo_entrada_m],
+            "galibo_salida_m": [clean(v,3) for v in df.galibo_salida_m],
             "fuente": df.fuente.tolist(),
             "mareo_time": [t.strftime("%d-%m %Hh") for t in df_mareo.time] if not df_mareo.empty else [],
             "mareo_cm": [clean(v) for v in df_mareo.sealevel_cm] if not df_mareo.empty else [],
@@ -368,7 +375,8 @@ def combinar(job_id, df_meteo, df_astro, df_mareo):
                 "total": clean(r.total_cm),
                 "astro": clean(r.astro_cm),
                 "meteo": clean(r.eta_met_cm),
-                "galibo": clean(r.galibo_cm),
+                "galibo_entrada": clean(r.galibo_entrada_m, 3),
+                "galibo_salida": clean(r.galibo_salida_m, 3),
                 "fuente": r.fuente,
             }
             for _, r in df.head(160).iterrows()
@@ -409,7 +417,8 @@ def with_current_cards(result):
     result["cards"]["total_cm"] = result["series"]["total_cm"][i]
     result["cards"]["astro_cm"] = result["series"]["astro_cm"][i]
     result["cards"]["meteo_cm"] = result["series"]["meteo_cm"][i]
-    result["cards"]["galibo_cm"] = result["series"]["galibo_cm"][i]
+    result["cards"]["galibo_entrada_m"] = result["series"]["galibo_entrada_m"][i]
+    result["cards"]["galibo_salida_m"] = result["series"]["galibo_salida_m"][i]
 
     mareo_times = result["series"].get("mareo_time", [])
     mareo_vals = result["series"].get("mareo_cm", [])
