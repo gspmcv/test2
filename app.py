@@ -345,7 +345,7 @@ def combinar(job_id, df_meteo, df_astro, df_mareo):
             "total_cm": clean(current.total_cm),
             "astro_cm": clean(current.astro_cm),
             "meteo_cm": clean(current.eta_met_cm),
-            "galibo_cm": clean(current.galibo_cm),
+            "galibo_m": round(float(current.galibo_m), 2),
             "next_high_time": next_high.time.strftime("%d-%m %Hh") if next_high is not None else "—",
             "next_high_cm": clean(next_high.total_cm) if next_high is not None else None,
             "next_low_time": next_low.time.strftime("%d-%m %Hh") if next_low is not None else "—",
@@ -357,6 +357,7 @@ def combinar(job_id, df_meteo, df_astro, df_mareo):
             "total_cm": [clean(v) for v in df.total_cm],
             "astro_cm": [clean(v) for v in df.astro_cm],
             "meteo_cm": [clean(v) for v in df.eta_met_cm],
+            "galibo_m": [round(float(v), 2) for v in df.galibo_m],
             "fuente": df.fuente.tolist(),
             "mareo_time": [t.strftime("%d-%m %Hh") for t in df_mareo.time] if not df_mareo.empty else [],
             "mareo_cm": [clean(v) for v in df_mareo.sealevel_cm] if not df_mareo.empty else [],
@@ -408,6 +409,7 @@ def with_current_cards(result):
     result["cards"]["total_cm"] = result["series"]["total_cm"][i]
     result["cards"]["astro_cm"] = result["series"]["astro_cm"][i]
     result["cards"]["meteo_cm"] = result["series"]["meteo_cm"][i]
+    result["cards"]["galibo_m"] = result["series"]["galibo_m"][i]
 
     mareo_times = result["series"].get("mareo_time", [])
     mareo_vals = result["series"].get("mareo_cm", [])
