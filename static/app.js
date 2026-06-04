@@ -1,9 +1,9 @@
 
 let chart;
 
-function fmt(v){
+function fmt(v, decimals = 1){
   if(v === null || v === undefined || Number.isNaN(v)) return "—";
-  return `${v > 0 ? "+" : ""}${Number(v).toFixed(1)}`;
+  return `${v > 0 ? "+" : ""}${Number(v).toFixed(decimals)}`;
 }
 
 async function start(){
@@ -44,7 +44,8 @@ function render(data){
   document.getElementById("totalCm").textContent = fmt(data.cards.total_cm);
   document.getElementById("astroCm").textContent = fmt(data.cards.astro_cm);
   document.getElementById("meteoCm").textContent = fmt(data.cards.meteo_cm);
-  document.getElementById("galiboCm").textContent = fmt(data.cards.galibo_cm);
+  document.getElementById("galiboEntradaM").textContent = fmt(data.cards.galibo_entrada_m, 3);
+  document.getElementById("galiboSalidaM").textContent = fmt(data.cards.galibo_salida_m, 3);
 
   document.getElementById("nextHigh").textContent = data.cards.next_high_time || "—";
   document.getElementById("nextHighVal").textContent = `${fmt(data.cards.next_high_cm)} cm`;
@@ -60,7 +61,8 @@ function render(data){
       <td>${fmt(r.total)}</td>
       <td>${fmt(r.astro)}</td>
       <td>${fmt(r.meteo)}</td>
-      <td>${fmt(r.galibo)}</td>
+      <td>${fmt(r.galibo_entrada,3)}</td>
+      <td>${fmt(r.galibo_salida,3)}</td>
       <td>${r.fuente}</td>
     `;
     tbody.appendChild(tr);
