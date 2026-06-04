@@ -44,7 +44,7 @@ function render(data){
   document.getElementById("totalCm").textContent = fmt(data.cards.total_cm);
   document.getElementById("astroCm").textContent = fmt(data.cards.astro_cm);
   document.getElementById("meteoCm").textContent = fmt(data.cards.meteo_cm);
-  document.getElementById("galiboCm").textContent = fmt(data.cards.galibo_cm);
+  document.getElementById("galiboCm").textContent = Number(data.cards.galibo_m).toFixed(2);
 
   document.getElementById("nextHigh").textContent = data.cards.next_high_time || "—";
   document.getElementById("nextHighVal").textContent = `${fmt(data.cards.next_high_cm)} cm`;
