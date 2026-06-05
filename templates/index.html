@@ -3,25 +3,28 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <title>Portus Total | Bahía de Palma</title>
+  <title>Gálibo disponible | Dársena Can Barbará</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/static/style.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
   <div class="shell">
-    <header class="hero" style="background-image: url('/static/canbarbara.jpg'); background-size: cover; background-position: center; position: relative;">
-      <div style="position:absolute; inset:0; background:rgba(10,40,80,0.65); border-radius: inherit;"></div>
-      <div style="position:relative; z-index:1;">
-        <p class="eyebrow">PORTUS · PALMA 3851 · ECMWF IFS</p>
-        <h1>Nivel total del mar · Bahía de Palma</h1>
-        <p class="subtitle">Marea astronómica + marea meteorológica + comparación con mareógrafo real.</p>
+  <header class="hero" style="background-image: url('/static/canbarbara.jpg'); background-size: cover; background-position: center; position: relative; min-height: 220px;">
+    <div style="position:absolute; inset:0; background:rgba(10,40,80,0.65); border-radius: inherit;"></div>
+    <div style="position:relative; z-index:1; display:flex; align-items:center; gap:24px;">
+      <img src="/static/logoAPB.jpg" alt="Autoritat Portuària de Balears" style="height:110px; width:auto; border-radius:6px;">
+      <div>       
+        <h1>Gálibo disponible · </h1>
+        <p><h1>Dársena de Can Barbará</h1></p>
+        <p class="subtitle">Predicción del nivel del mar total y comparación con mareógrafo real.</p>
       </div>
-      <div class="brand-card" style="position:relative; z-index:1;">
-        <span class="live-dot"></span>
-        <span id="generatedAt">Calculando...</span>
-      </div>
-    </header>
+  </div>
+  <div class="brand-card" style="position:relative; z-index:1;">
+    <span class="live-dot"></span>
+    <span id="generatedAt">Calculando...</span>
+  </div>
+</header>
 
     <section id="loader" class="loader-card">
       <div class="loader-top">
@@ -51,6 +54,16 @@
           <strong id="totalCm">—</strong>
           <small>cm · Cero REDMAR</small>
         </article>
+        <article class="card primary">
+          <span class="label">Gálibo entrada</span>
+          <strong id="galiboEntradaM">—</strong>
+          <small>m libres</small>
+        </article>
+        <article class="card primary">
+          <span class="label">Gálibo salida</span>
+          <strong id="galiboSalidaM">—</strong>
+          <small>m libres</small>
+        </article>
         <article class="card">
           <span class="label">Astronómica</span>
           <strong id="astroCm">—</strong>
@@ -61,16 +74,7 @@
           <strong id="meteoCm">—</strong>
           <small>cm</small>
         </article>
-        <article class="card">
-          <span class="label">Gálibo entrada</span>
-          <strong id="galiboEntradaM">—</strong>
-          <small>m libres</small>
-        </article>
-        <article class="card">
-          <span class="label">Gálibo salida</span>
-          <strong id="galiboSalidaM">—</strong>
-          <small>m libres</small>
-        </article>
+
       </section>
 
       <section class="split">
@@ -125,12 +129,68 @@
     </main>
 
     <footer class="aviso-legal">
-      <p><strong>IMPORTANTE</strong></p>
-      <p>Los valores de gálibo mostrados son <em>orientativos</em> y se basan en una previsión sujeta a <em>incertidumbre</em>.</p>
-      <p>La decisión final sobre el paso de la embarcación es <strong>responsabilidad exclusiva del patrón</strong>, quien debe valorar el air draft de su embarcación, las condiciones meteorológicas y marítimas del momento, así como cualquier otro factor relevante para la maniobra.</p>
+      <p><strong>⚠️ AVISO LEGAL Y CONDICIONES DE USO: VALORES DE GÁLIBO</strong></p>
+    
+      <ol style="padding-left:1.2rem; margin:0.6rem 0;">
+        <li>
+          <strong>Naturaleza de los datos y margen de error.</strong>
+          Los valores de gálibo facilitados por esta herramienta son estrictamente
+          <em>orientativos</em>. Dichos datos se basan en modelos de previsión sujetos a
+          variables de <em>incertidumbre</em>, con un margen de error típico estimado
+          <u>en torno a los ±5&nbsp;cm</u>.
+        </li>
+        <li>
+          <strong>Responsabilidad del patrón.</strong>
+          La decisión final de realizar cualquier maniobra o navegación es
+          <strong>responsabilidad exclusiva y directa del patrón</strong> de la embarcación.
+          Es obligación del navegante evaluar minuciosamente el calado aéreo del barco, las
+          condiciones meteorológicas y marítimas en tiempo real, así como cualquier otro
+          factor relevante para la seguridad marítima.
+        </li>
+        <li>
+          <strong>Alerta por fenómenos extraordinarios.</strong>
+          Se advierte expresamente de que, en caso de producirse una <strong>rissaga</strong>
+          (o variación brusca del nivel del mar por causas meteorológicas), su efecto solo se
+          verá reflejado de manera parcial en la componente meteorológica y en las lecturas
+          del mareógrafo. Bajo condiciones climáticas extremas o cambios rápidos de la presión
+          atmosférica, los márgenes de error de la herramienta pueden incrementarse
+          significativamente.
+        </li>
+        <li>
+          <strong>Fuentes oficiales.</strong>
+          Esta plataforma no sustituye a los canales de información preceptivos. Para
+          garantizar la seguridad de la navegación, consulte siempre el parte oficial emitido
+          por <strong>Puertos del Estado</strong> y el <strong>Servicio de Seguridad Marítima</strong>.
+        </li>
+        <li>
+          <strong>Titularidad y origen de los datos.</strong>
+          Esta aplicación es una herramienta desarrollada por <strong>MCVALNERA</strong> para la
+          <strong>Autoridad Portuaria de Baleares</strong>. La información mostrada se genera mediante
+          la integración de datos meteorológicos y oceanográficos procedentes de
+          <strong>PORTUS</strong> (Mareógrafo: PALMA&nbsp;3851) y del sistema de predicción
+          <strong>ECMWF IFS</strong>. MCVALNERA actúa exclusivamente como desarrollador de la
+          plataforma y no se hace responsable de las posibles alteraciones, caídas de servicio o
+          inexactitudes originadas en las fuentes de datos de dichos organismos proveedores.
+        </li>
+      </ol>
+    
+      <p style="margin-top:0.6rem;">
+        Al utilizar estos datos, el usuario declara conocer y aceptar que la información
+        meteorológica y de gálibos no exime al patrón de su deber de prudencia y consulta de
+        fuentes oficiales.
+      </p>
     </footer>
 
+       <div class="mcvalnera-credit">
+        <img src="/static/mcvalnera.png" alt="MCVALNERA" style="height:100px; width:auto;">
+        <div style="display:flex; flex-direction:column; gap:6px;">
+          <span style="white-space:nowrap;">Herramienta desarrollada por <strong>MCVALNERA</strong></span>
+          <p style="margin:0; font-size:11px; letter-spacing:.12em; font-weight:700; opacity:.7;">Fuentes de datos: PORTUS (Mareógrafo: PALMA 3851) • ECMWF IFS</p>
+        </div>
+      </div>
+
   </div>
+  </div> 
 
   <script src="/static/app.js"></script>
 </body>
