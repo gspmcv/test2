@@ -1,19 +1,19 @@
 {
-  "generated_at": "13-06-2026 11:39 Madrid",
+  "generated_at": "13-06-2026 16:32 Madrid",
   "period": {
     "start": "13-06-2026 00:00",
     "end": "18-06-2026 00:00"
   },
   "cards": {
-    "total_cm": -25.0,
-    "astro_cm": -18.2,
-    "meteo_cm": -6.8,
-    "galibo_entrada_m": 1.733,
-    "galibo_salida_m": 1.724,
+    "total_cm": -12.9,
+    "astro_cm": -7.1,
+    "meteo_cm": -5.9,
+    "galibo_entrada_m": 1.612,
+    "galibo_salida_m": 1.603,
     "next_high_time": "13-06 19h",
     "next_high_cm": -9.1,
-    "next_low_time": "13-06 11h",
-    "next_low_cm": -25.0
+    "next_low_time": "14-06 02h",
+    "next_low_cm": -15.8
   },
   "series": {
     "time": [
@@ -890,11 +890,11 @@
       "historico",
       "historico",
       "historico",
-      "forecast",
-      "forecast",
-      "forecast",
-      "forecast",
-      "forecast",
+      "historico",
+      "historico",
+      "historico",
+      "historico",
+      "historico",
       "forecast",
       "forecast",
       "forecast",
@@ -1053,7 +1053,11 @@
       "13-06 01h",
       "13-06 02h",
       "13-06 03h",
-      "13-06 04h"
+      "13-06 04h",
+      "13-06 05h",
+      "13-06 06h",
+      "13-06 07h",
+      "13-06 08h"
     ],
     "mareo_cm": [
       -10.7,
@@ -1108,7 +1112,11 @@
       -15.1,
       -13.9,
       -13.6,
-      -13.3
+      -13.3,
+      -12.9,
+      -13.7,
+      -16.0,
+      -18.2
     ]
   },
   "table": [
@@ -1227,7 +1235,7 @@
       "meteo": -6.6,
       "galibo_entrada": 1.727,
       "galibo_salida": 1.718,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "13-06 13h",
@@ -1236,7 +1244,7 @@
       "meteo": -6.5,
       "galibo_entrada": 1.708,
       "galibo_salida": 1.699,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "13-06 14h",
@@ -1245,7 +1253,7 @@
       "meteo": -6.3,
       "galibo_entrada": 1.679,
       "galibo_salida": 1.67,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "13-06 15h",
@@ -1254,7 +1262,7 @@
       "meteo": -6.1,
       "galibo_entrada": 1.644,
       "galibo_salida": 1.635,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "13-06 16h",
@@ -1263,7 +1271,7 @@
       "meteo": -5.9,
       "galibo_entrada": 1.612,
       "galibo_salida": 1.603,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "13-06 17h",
