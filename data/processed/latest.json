@@ -1,15 +1,15 @@
 {
-  "generated_at": "26-06-2026 12:55 Madrid",
+  "generated_at": "26-06-2026 16:50 Madrid",
   "period": {
     "start": "26-06-2026 00:00",
     "end": "01-07-2026 00:00"
   },
   "cards": {
-    "total_cm": -18.2,
-    "astro_cm": -16.2,
-    "meteo_cm": -2.0,
-    "galibo_entrada_m": 1.665,
-    "galibo_salida_m": 1.656,
+    "total_cm": -9.7,
+    "astro_cm": -8.0,
+    "meteo_cm": -1.7,
+    "galibo_entrada_m": 1.58,
+    "galibo_salida_m": 1.571,
     "next_high_time": "26-06 18h",
     "next_high_cm": -7.7,
     "next_low_time": "27-06 11h",
@@ -891,10 +891,10 @@
       "historico",
       "historico",
       "historico",
-      "forecast",
-      "forecast",
-      "forecast",
-      "forecast",
+      "historico",
+      "historico",
+      "historico",
+      "historico",
       "forecast",
       "forecast",
       "forecast",
@@ -1053,7 +1053,11 @@
       "26-06 01h",
       "26-06 02h",
       "26-06 03h",
-      "26-06 04h"
+      "26-06 04h",
+      "26-06 05h",
+      "26-06 06h",
+      "26-06 07h",
+      "26-06 08h"
     ],
     "mareo_cm": [
       -6.6,
@@ -1108,7 +1112,11 @@
       -5.8,
       -5.8,
       -5.9,
-      -6.2
+      -6.2,
+      -6.8,
+      -8.0,
+      -9.6,
+      -11.4
     ]
   },
   "table": [
@@ -1236,7 +1244,7 @@
       "meteo": -1.9,
       "galibo_entrada": 1.648,
       "galibo_salida": 1.639,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "26-06 14h",
@@ -1245,7 +1253,7 @@
       "meteo": -1.9,
       "galibo_entrada": 1.625,
       "galibo_salida": 1.616,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "26-06 15h",
@@ -1254,7 +1262,7 @@
       "meteo": -1.8,
       "galibo_entrada": 1.601,
       "galibo_salida": 1.592,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "26-06 16h",
@@ -1263,7 +1271,7 @@
       "meteo": -1.7,
       "galibo_entrada": 1.58,
       "galibo_salida": 1.571,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "26-06 17h",
