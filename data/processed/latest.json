@@ -1,19 +1,19 @@
 {
-  "generated_at": "01-07-2026 12:18 Madrid",
+  "generated_at": "01-07-2026 17:15 Madrid",
   "period": {
     "start": "01-07-2026 00:00",
     "end": "06-07-2026 00:00"
   },
   "cards": {
-    "total_cm": -21.9,
-    "astro_cm": -18.4,
-    "meteo_cm": -3.5,
-    "galibo_entrada_m": 1.702,
-    "galibo_salida_m": 1.693,
+    "total_cm": -14.4,
+    "astro_cm": -11.6,
+    "meteo_cm": -2.8,
+    "galibo_entrada_m": 1.627,
+    "galibo_salida_m": 1.618,
     "next_high_time": "01-07 21h",
     "next_high_cm": -5.8,
-    "next_low_time": "01-07 13h",
-    "next_low_cm": -21.9
+    "next_low_time": "02-07 13h",
+    "next_low_cm": -22.3
   },
   "series": {
     "time": [
@@ -891,11 +891,11 @@
       "historico",
       "historico",
       "historico",
-      "forecast",
-      "forecast",
-      "forecast",
-      "forecast",
-      "forecast",
+      "historico",
+      "historico",
+      "historico",
+      "historico",
+      "historico",
       "forecast",
       "forecast",
       "forecast",
@@ -1200,7 +1200,7 @@
       "meteo": -3.3,
       "galibo_entrada": 1.702,
       "galibo_salida": 1.693,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "01-07 14h",
@@ -1209,7 +1209,7 @@
       "meteo": -3.2,
       "galibo_entrada": 1.696,
       "galibo_salida": 1.687,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "01-07 15h",
@@ -1218,7 +1218,7 @@
       "meteo": -3.0,
       "galibo_entrada": 1.682,
       "galibo_salida": 1.673,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "01-07 16h",
@@ -1227,7 +1227,7 @@
       "meteo": -2.9,
       "galibo_entrada": 1.658,
       "galibo_salida": 1.649,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "01-07 17h",
@@ -1236,7 +1236,7 @@
       "meteo": -2.8,
       "galibo_entrada": 1.627,
       "galibo_salida": 1.618,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "01-07 18h",
