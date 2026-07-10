@@ -1,17 +1,17 @@
 {
-  "generated_at": "10-07-2026 17:05 Madrid",
+  "generated_at": "10-07-2026 19:11 Madrid",
   "period": {
     "start": "10-07-2026 00:00",
     "end": "15-07-2026 00:00"
   },
   "cards": {
-    "total_cm": -1.7,
-    "astro_cm": -7.1,
+    "total_cm": -2.3,
+    "astro_cm": -7.7,
     "meteo_cm": 5.3,
-    "galibo_entrada_m": 1.5,
-    "galibo_salida_m": 1.491,
-    "next_high_time": "10-07 17h",
-    "next_high_cm": -1.7,
+    "galibo_entrada_m": 1.506,
+    "galibo_salida_m": 1.497,
+    "next_high_time": "11-07 02h",
+    "next_high_cm": -5.6,
     "next_low_time": "11-07 00h",
     "next_low_cm": -5.9
   },
@@ -896,8 +896,8 @@
       "historico",
       "historico",
       "historico",
-      "forecast",
-      "forecast",
+      "historico",
+      "historico",
       "forecast",
       "forecast",
       "forecast",
@@ -1057,7 +1057,9 @@
       "10-07 05h",
       "10-07 06h",
       "10-07 07h",
-      "10-07 08h"
+      "10-07 08h",
+      "10-07 09h",
+      "10-07 10h"
     ],
     "mareo_cm": [
       3.0,
@@ -1116,7 +1118,9 @@
       7.0,
       5.4,
       4.0,
-      3.4
+      3.4,
+      3.6,
+      4.3
     ]
   },
   "table": [
@@ -1289,7 +1293,7 @@
       "meteo": 5.4,
       "galibo_entrada": 1.502,
       "galibo_salida": 1.493,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "10-07 19h",
@@ -1298,7 +1302,7 @@
       "meteo": 5.3,
       "galibo_entrada": 1.506,
       "galibo_salida": 1.497,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "10-07 20h",
