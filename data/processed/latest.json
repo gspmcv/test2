@@ -1,15 +1,15 @@
 {
-  "generated_at": "12-07-2026 12:45 Madrid",
+  "generated_at": "12-07-2026 16:00 Madrid",
   "period": {
     "start": "12-07-2026 00:00",
     "end": "17-07-2026 00:00"
   },
   "cards": {
-    "total_cm": -15.4,
-    "astro_cm": -17.7,
-    "meteo_cm": 2.3,
-    "galibo_entrada_m": 1.637,
-    "galibo_salida_m": 1.628,
+    "total_cm": -3.9,
+    "astro_cm": -6.4,
+    "meteo_cm": 2.5,
+    "galibo_entrada_m": 1.522,
+    "galibo_salida_m": 1.513,
     "next_high_time": "12-07 19h",
     "next_high_cm": -0.7,
     "next_low_time": "13-07 02h",
@@ -891,10 +891,10 @@
       "historico",
       "historico",
       "historico",
-      "forecast",
-      "forecast",
-      "forecast",
-      "forecast",
+      "historico",
+      "historico",
+      "historico",
+      "historico",
       "forecast",
       "forecast",
       "forecast",
@@ -1053,7 +1053,11 @@
       "12-07 01h",
       "12-07 02h",
       "12-07 03h",
-      "12-07 04h"
+      "12-07 04h",
+      "12-07 05h",
+      "12-07 06h",
+      "12-07 07h",
+      "12-07 08h"
     ],
     "mareo_cm": [
       7.9,
@@ -1108,7 +1112,11 @@
       8.9,
       8.5,
       8.5,
-      9.2
+      9.2,
+      8.9,
+      7.4,
+      5.6,
+      3.4
     ]
   },
   "table": [
@@ -1236,7 +1244,7 @@
       "meteo": 2.3,
       "galibo_entrada": 1.615,
       "galibo_salida": 1.606,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "12-07 14h",
@@ -1245,7 +1253,7 @@
       "meteo": 2.4,
       "galibo_entrada": 1.584,
       "galibo_salida": 1.575,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "12-07 15h",
@@ -1254,7 +1262,7 @@
       "meteo": 2.5,
       "galibo_entrada": 1.551,
       "galibo_salida": 1.542,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "12-07 16h",
@@ -1263,7 +1271,7 @@
       "meteo": 2.5,
       "galibo_entrada": 1.522,
       "galibo_salida": 1.513,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "12-07 17h",
