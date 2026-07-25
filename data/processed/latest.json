@@ -1,15 +1,15 @@
 {
-  "generated_at": "25-07-2026 12:48 Madrid",
+  "generated_at": "25-07-2026 16:06 Madrid",
   "period": {
     "start": "25-07-2026 00:00",
     "end": "30-07-2026 00:00"
   },
   "cards": {
-    "total_cm": -8.8,
-    "astro_cm": -14.8,
-    "meteo_cm": 6.1,
-    "galibo_entrada_m": 1.571,
-    "galibo_salida_m": 1.562,
+    "total_cm": -0.5,
+    "astro_cm": -6.8,
+    "meteo_cm": 6.3,
+    "galibo_entrada_m": 1.488,
+    "galibo_salida_m": 1.479,
     "next_high_time": "25-07 18h",
     "next_high_cm": 1.1,
     "next_low_time": "26-07 11h",
@@ -891,10 +891,10 @@
       "historico",
       "historico",
       "historico",
-      "forecast",
-      "forecast",
-      "forecast",
-      "forecast",
+      "historico",
+      "historico",
+      "historico",
+      "historico",
       "forecast",
       "forecast",
       "forecast",
@@ -1053,7 +1053,11 @@
       "25-07 01h",
       "25-07 02h",
       "25-07 03h",
-      "25-07 04h"
+      "25-07 04h",
+      "25-07 05h",
+      "25-07 06h",
+      "25-07 07h",
+      "25-07 08h"
     ],
     "mareo_cm": [
       1.8,
@@ -1108,7 +1112,11 @@
       3.8,
       4.1,
       4.3,
-      4.0
+      4.0,
+      3.0,
+      2.5,
+      1.4,
+      0.0
     ]
   },
   "table": [
@@ -1236,7 +1244,7 @@
       "meteo": 6.1,
       "galibo_entrada": 1.551,
       "galibo_salida": 1.542,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "25-07 14h",
@@ -1245,7 +1253,7 @@
       "meteo": 6.2,
       "galibo_entrada": 1.528,
       "galibo_salida": 1.519,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "25-07 15h",
@@ -1254,7 +1262,7 @@
       "meteo": 6.2,
       "galibo_entrada": 1.506,
       "galibo_salida": 1.497,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "25-07 16h",
@@ -1263,7 +1271,7 @@
       "meteo": 6.3,
       "galibo_entrada": 1.488,
       "galibo_salida": 1.479,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "25-07 17h",
