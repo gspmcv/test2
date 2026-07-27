@@ -1,15 +1,15 @@
 {
-  "generated_at": "27-07-2026 17:18 Madrid",
+  "generated_at": "27-07-2026 19:14 Madrid",
   "period": {
     "start": "27-07-2026 00:00",
     "end": "01-08-2026 00:00"
   },
   "cards": {
-    "total_cm": -7.8,
-    "astro_cm": -5.6,
+    "total_cm": -5.4,
+    "astro_cm": -3.3,
     "meteo_cm": -2.1,
-    "galibo_entrada_m": 1.561,
-    "galibo_salida_m": 1.552,
+    "galibo_entrada_m": 1.537,
+    "galibo_salida_m": 1.528,
     "next_high_time": "27-07 19h",
     "next_high_cm": -5.4,
     "next_low_time": "28-07 12h",
@@ -896,8 +896,8 @@
       "historico",
       "historico",
       "historico",
-      "forecast",
-      "forecast",
+      "historico",
+      "historico",
       "forecast",
       "forecast",
       "forecast",
@@ -1293,7 +1293,7 @@
       "meteo": -2.1,
       "galibo_entrada": 1.543,
       "galibo_salida": 1.534,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "27-07 19h",
@@ -1302,7 +1302,7 @@
       "meteo": -2.1,
       "galibo_entrada": 1.537,
       "galibo_salida": 1.528,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "27-07 20h",
