@@ -1,15 +1,15 @@
 {
-  "generated_at": "23-08-2026 11:56 Madrid",
+  "generated_at": "23-08-2026 15:45 Madrid",
   "period": {
     "start": "23-08-2026 00:00",
     "end": "28-08-2026 00:00"
   },
   "cards": {
-    "total_cm": -13.3,
-    "astro_cm": -12.6,
-    "meteo_cm": -0.7,
-    "galibo_entrada_m": 1.616,
-    "galibo_salida_m": 1.607,
+    "total_cm": -5.5,
+    "astro_cm": -5.2,
+    "meteo_cm": -0.3,
+    "galibo_entrada_m": 1.538,
+    "galibo_salida_m": 1.529,
     "next_high_time": "23-08 18h",
     "next_high_cm": -3.1,
     "next_low_time": "24-08 10h",
@@ -890,10 +890,10 @@
       "historico",
       "historico",
       "historico",
-      "forecast",
-      "forecast",
-      "forecast",
-      "forecast",
+      "historico",
+      "historico",
+      "historico",
+      "historico",
       "forecast",
       "forecast",
       "forecast",
@@ -1053,7 +1053,11 @@
       "23-08 01h",
       "23-08 02h",
       "23-08 03h",
-      "23-08 04h"
+      "23-08 04h",
+      "23-08 05h",
+      "23-08 06h",
+      "23-08 07h",
+      "23-08 08h"
     ],
     "mareo_cm": [
       1.5,
@@ -1108,7 +1112,11 @@
       -0.6,
       -0.8,
       -1.8,
-      -3.0
+      -3.0,
+      -3.6,
+      -4.4,
+      -5.8,
+      -7.1
     ]
   },
   "table": [
@@ -1227,7 +1235,7 @@
       "meteo": -0.7,
       "galibo_entrada": 1.6,
       "galibo_salida": 1.591,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "23-08 13h",
@@ -1236,7 +1244,7 @@
       "meteo": -0.6,
       "galibo_entrada": 1.579,
       "galibo_salida": 1.57,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "23-08 14h",
@@ -1245,7 +1253,7 @@
       "meteo": -0.4,
       "galibo_entrada": 1.557,
       "galibo_salida": 1.548,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "23-08 15h",
@@ -1254,7 +1262,7 @@
       "meteo": -0.3,
       "galibo_entrada": 1.538,
       "galibo_salida": 1.529,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "23-08 16h",
