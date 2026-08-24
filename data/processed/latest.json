@@ -1,15 +1,15 @@
 {
-  "generated_at": "24-08-2026 01:15 Madrid",
+  "generated_at": "24-08-2026 05:23 Madrid",
   "period": {
     "start": "23-08-2026 12:00",
     "end": "28-08-2026 12:00"
   },
   "cards": {
-    "total_cm": -8.5,
-    "astro_cm": -8.7,
-    "meteo_cm": 0.1,
-    "galibo_entrada_m": 1.568,
-    "galibo_salida_m": 1.559,
+    "total_cm": -10.2,
+    "astro_cm": -10.6,
+    "meteo_cm": 0.4,
+    "galibo_entrada_m": 1.585,
+    "galibo_salida_m": 1.576,
     "next_high_time": "24-08 18h",
     "next_high_cm": -0.2,
     "next_low_time": "24-08 10h",
@@ -892,10 +892,10 @@
       "historico",
       "historico",
       "historico",
-      "forecast",
-      "forecast",
-      "forecast",
-      "forecast",
+      "historico",
+      "historico",
+      "historico",
+      "historico",
       "forecast",
       "forecast",
       "forecast",
@@ -1043,7 +1043,11 @@
       "23-08 15h",
       "23-08 16h",
       "23-08 17h",
-      "23-08 18h"
+      "23-08 18h",
+      "23-08 19h",
+      "23-08 20h",
+      "23-08 21h",
+      "23-08 22h"
     ],
     "mareo_cm": [
       -2.7,
@@ -1088,7 +1092,11 @@
       2.8,
       4.9,
       6.2,
-      5.4
+      5.4,
+      4.3,
+      4.2,
+      3.4,
+      1.2
     ]
   },
   "table": [
@@ -1225,7 +1233,7 @@
       "meteo": 0.2,
       "galibo_entrada": 1.572,
       "galibo_salida": 1.563,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "24-08 03h",
@@ -1234,7 +1242,7 @@
       "meteo": 0.2,
       "galibo_entrada": 1.576,
       "galibo_salida": 1.567,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "24-08 04h",
@@ -1243,7 +1251,7 @@
       "meteo": 0.3,
       "galibo_entrada": 1.58,
       "galibo_salida": 1.571,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "24-08 05h",
@@ -1252,7 +1260,7 @@
       "meteo": 0.4,
       "galibo_entrada": 1.585,
       "galibo_salida": 1.576,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "24-08 06h",
