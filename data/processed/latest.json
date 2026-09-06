@@ -1,15 +1,15 @@
 {
-  "generated_at": "06-09-2026 02:26 Madrid",
+  "generated_at": "06-09-2026 06:45 Madrid",
   "period": {
     "start": "05-09-2026 12:00",
     "end": "10-09-2026 12:00"
   },
   "cards": {
-    "total_cm": -14.1,
-    "astro_cm": -8.9,
-    "meteo_cm": -5.2,
-    "galibo_entrada_m": 1.624,
-    "galibo_salida_m": 1.615,
+    "total_cm": -17.2,
+    "astro_cm": -12.2,
+    "meteo_cm": -5.0,
+    "galibo_entrada_m": 1.655,
+    "galibo_salida_m": 1.646,
     "next_high_time": "06-09 16h",
     "next_high_cm": -6.1,
     "next_low_time": "06-09 08h",
@@ -893,10 +893,10 @@
       "historico",
       "historico",
       "historico",
-      "forecast",
-      "forecast",
-      "forecast",
-      "forecast",
+      "historico",
+      "historico",
+      "historico",
+      "historico",
       "forecast",
       "forecast",
       "forecast",
@@ -1043,7 +1043,11 @@
       "05-09 15h",
       "05-09 16h",
       "05-09 17h",
-      "05-09 18h"
+      "05-09 18h",
+      "05-09 19h",
+      "05-09 20h",
+      "05-09 21h",
+      "05-09 22h"
     ],
     "mareo_cm": [
       -5.7,
@@ -1088,7 +1092,11 @@
       2.3,
       2.2,
       1.6,
-      0.7
+      0.7,
+      -0.3,
+      -1.8,
+      -2.8,
+      -3.2
     ]
   },
   "table": [
@@ -1234,7 +1242,7 @@
       "meteo": -5.1,
       "galibo_entrada": 1.63,
       "galibo_salida": 1.621,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "06-09 04h",
@@ -1243,7 +1251,7 @@
       "meteo": -5.1,
       "galibo_entrada": 1.638,
       "galibo_salida": 1.629,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "06-09 05h",
@@ -1252,7 +1260,7 @@
       "meteo": -5.0,
       "galibo_entrada": 1.646,
       "galibo_salida": 1.637,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "06-09 06h",
@@ -1261,7 +1269,7 @@
       "meteo": -5.0,
       "galibo_entrada": 1.655,
       "galibo_salida": 1.646,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "06-09 07h",
