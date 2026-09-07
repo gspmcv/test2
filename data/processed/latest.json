@@ -1,15 +1,15 @@
 {
-  "generated_at": "07-09-2026 00:56 Madrid",
+  "generated_at": "07-09-2026 06:49 Madrid",
   "period": {
     "start": "06-09-2026 12:00",
     "end": "11-09-2026 12:00"
   },
   "cards": {
-    "total_cm": -13.4,
-    "astro_cm": -8.7,
-    "meteo_cm": -4.7,
-    "galibo_entrada_m": 1.617,
-    "galibo_salida_m": 1.608,
+    "total_cm": -16.2,
+    "astro_cm": -11.3,
+    "meteo_cm": -4.8,
+    "galibo_entrada_m": 1.645,
+    "galibo_salida_m": 1.636,
     "next_high_time": "07-09 17h",
     "next_high_cm": -4.8,
     "next_low_time": "07-09 09h",
@@ -891,12 +891,12 @@
       "historico",
       "historico",
       "historico",
-      "forecast",
-      "forecast",
-      "forecast",
-      "forecast",
-      "forecast",
-      "forecast",
+      "historico",
+      "historico",
+      "historico",
+      "historico",
+      "historico",
+      "historico",
       "forecast",
       "forecast",
       "forecast",
@@ -1041,7 +1041,13 @@
       "06-09 13h",
       "06-09 14h",
       "06-09 15h",
-      "06-09 16h"
+      "06-09 16h",
+      "06-09 17h",
+      "06-09 18h",
+      "06-09 19h",
+      "06-09 20h",
+      "06-09 21h",
+      "06-09 22h"
     ],
     "mareo_cm": [
       -2.2,
@@ -1084,7 +1090,13 @@
       1.2,
       2.8,
       3.6,
-      4.4
+      4.4,
+      4.4,
+      3.3,
+      2.3,
+      1.6,
+      -0.1,
+      -1.9
     ]
   },
   "table": [
@@ -1212,7 +1224,7 @@
       "meteo": -4.7,
       "galibo_entrada": 1.618,
       "galibo_salida": 1.609,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "07-09 02h",
@@ -1221,7 +1233,7 @@
       "meteo": -4.7,
       "galibo_entrada": 1.618,
       "galibo_salida": 1.609,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "07-09 03h",
@@ -1230,7 +1242,7 @@
       "meteo": -4.7,
       "galibo_entrada": 1.62,
       "galibo_salida": 1.611,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "07-09 04h",
@@ -1239,7 +1251,7 @@
       "meteo": -4.7,
       "galibo_entrada": 1.625,
       "galibo_salida": 1.616,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "07-09 05h",
@@ -1248,7 +1260,7 @@
       "meteo": -4.8,
       "galibo_entrada": 1.634,
       "galibo_salida": 1.625,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "07-09 06h",
@@ -1257,7 +1269,7 @@
       "meteo": -4.8,
       "galibo_entrada": 1.645,
       "galibo_salida": 1.636,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "07-09 07h",
