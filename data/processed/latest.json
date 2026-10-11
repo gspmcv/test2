@@ -1,17 +1,17 @@
 {
-  "generated_at": "11-10-2026 04:49 Madrid",
+  "generated_at": "11-10-2026 08:42 Madrid",
   "period": {
     "start": "10-10-2026 12:00",
     "end": "15-10-2026 12:00"
   },
   "cards": {
-    "total_cm": -9.1,
-    "astro_cm": -7.0,
-    "meteo_cm": -2.0,
-    "galibo_entrada_m": 1.574,
-    "galibo_salida_m": 1.565,
-    "next_high_time": "11-10 07h",
-    "next_high_cm": -3.9,
+    "total_cm": -4.2,
+    "astro_cm": -2.6,
+    "meteo_cm": -1.6,
+    "galibo_entrada_m": 1.525,
+    "galibo_salida_m": 1.516,
+    "next_high_time": "11-10 19h",
+    "next_high_cm": -2.7,
     "next_low_time": "11-10 14h",
     "next_low_cm": -9.8
   },
@@ -895,10 +895,10 @@
       "historico",
       "historico",
       "historico",
-      "forecast",
-      "forecast",
-      "forecast",
-      "forecast",
+      "historico",
+      "historico",
+      "historico",
+      "historico",
       "forecast",
       "forecast",
       "forecast",
@@ -1033,7 +1033,9 @@
       "10-10 17h",
       "10-10 18h",
       "10-10 19h",
-      "10-10 20h"
+      "10-10 20h",
+      "10-10 21h",
+      "10-10 22h"
     ],
     "mareo_cm": [
       -5.2,
@@ -1068,7 +1070,9 @@
       -6.0,
       -4.0,
       -3.9,
-      -4.8
+      -4.8,
+      -6.3,
+      -8.4
     ]
   },
   "table": [
@@ -1232,7 +1236,7 @@
       "meteo": -1.9,
       "galibo_entrada": 1.55,
       "galibo_salida": 1.541,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "11-10 06h",
@@ -1241,7 +1245,7 @@
       "meteo": -1.8,
       "galibo_entrada": 1.531,
       "galibo_salida": 1.522,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "11-10 07h",
@@ -1250,7 +1254,7 @@
       "meteo": -1.6,
       "galibo_entrada": 1.522,
       "galibo_salida": 1.513,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "11-10 08h",
@@ -1259,7 +1263,7 @@
       "meteo": -1.6,
       "galibo_entrada": 1.525,
       "galibo_salida": 1.516,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "11-10 09h",
