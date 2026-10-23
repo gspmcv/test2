@@ -1,17 +1,17 @@
 {
-  "generated_at": "23-10-2026 02:05 Madrid",
+  "generated_at": "23-10-2026 06:57 Madrid",
   "period": {
     "start": "22-10-2026 12:00",
     "end": "27-10-2026 12:00"
   },
   "cards": {
-    "total_cm": -13.7,
-    "astro_cm": -7.0,
-    "meteo_cm": -6.7,
-    "galibo_entrada_m": 1.62,
-    "galibo_salida_m": 1.611,
-    "next_high_time": "23-10 05h",
-    "next_high_cm": -11.0,
+    "total_cm": -11.2,
+    "astro_cm": -5.1,
+    "meteo_cm": -6.0,
+    "galibo_entrada_m": 1.595,
+    "galibo_salida_m": 1.586,
+    "next_high_time": "23-10 17h",
+    "next_high_cm": -6.8,
     "next_low_time": "23-10 11h",
     "next_low_cm": -13.9
   },
@@ -893,10 +893,10 @@
       "historico",
       "historico",
       "historico",
-      "forecast",
-      "forecast",
-      "forecast",
-      "forecast",
+      "historico",
+      "historico",
+      "historico",
+      "historico",
       "forecast",
       "forecast",
       "forecast",
@@ -1041,7 +1041,8 @@
       "22-10 13h",
       "22-10 14h",
       "22-10 15h",
-      "22-10 16h"
+      "22-10 16h",
+      "22-10 17h"
     ],
     "mareo_cm": [
       -0.6,
@@ -1084,7 +1085,8 @@
       -5.3,
       -2.3,
       -0.6,
-      0.7
+      0.7,
+      1.6
     ]
   },
   "table": [
@@ -1230,7 +1232,7 @@
       "meteo": -6.5,
       "galibo_entrada": 1.607,
       "galibo_salida": 1.598,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "23-10 04h",
@@ -1239,7 +1241,7 @@
       "meteo": -6.3,
       "galibo_entrada": 1.597,
       "galibo_salida": 1.588,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "23-10 05h",
@@ -1248,7 +1250,7 @@
       "meteo": -6.1,
       "galibo_entrada": 1.593,
       "galibo_salida": 1.584,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "23-10 06h",
@@ -1257,7 +1259,7 @@
       "meteo": -6.0,
       "galibo_entrada": 1.595,
       "galibo_salida": 1.586,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "23-10 07h",
