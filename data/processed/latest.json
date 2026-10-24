@@ -1,19 +1,19 @@
 {
-  "generated_at": "25-10-2026 00:59 Madrid",
+  "generated_at": "25-10-2026 01:32 Madrid",
   "period": {
     "start": "24-10-2026 12:00",
     "end": "29-10-2026 12:00"
   },
   "cards": {
-    "total_cm": -19.7,
-    "astro_cm": -10.8,
-    "meteo_cm": -8.9,
-    "galibo_entrada_m": 1.68,
-    "galibo_salida_m": 1.671,
+    "total_cm": -19.1,
+    "astro_cm": -10.4,
+    "meteo_cm": -8.7,
+    "galibo_entrada_m": 1.674,
+    "galibo_salida_m": 1.665,
     "next_high_time": "25-10 06h",
     "next_high_cm": -9.3,
-    "next_low_time": "25-10 00h",
-    "next_low_cm": -19.7
+    "next_low_time": "25-10 13h",
+    "next_low_cm": -14.4
   },
   "series": {
     "time": [
@@ -891,7 +891,7 @@
       "historico",
       "historico",
       "historico",
-      "forecast",
+      "historico",
       "forecast",
       "forecast",
       "forecast",
@@ -1041,7 +1041,9 @@
       "24-10 13h",
       "24-10 14h",
       "24-10 15h",
-      "24-10 16h"
+      "24-10 16h",
+      "24-10 17h",
+      "24-10 18h"
     ],
     "mareo_cm": [
       -7.8,
@@ -1084,7 +1086,9 @@
       -11.4,
       -10.3,
       -8.1,
-      -5.7
+      -5.7,
+      -4.4,
+      -4.6
     ]
   },
   "table": [
@@ -1212,7 +1216,7 @@
       "meteo": -8.7,
       "galibo_entrada": 1.674,
       "galibo_salida": 1.665,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "25-10 02h",
