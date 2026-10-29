@@ -1,19 +1,19 @@
 {
-  "generated_at": "28-10-2026 23:52 Madrid",
+  "generated_at": "29-10-2026 03:45 Madrid",
   "period": {
     "start": "28-10-2026 12:00",
     "end": "02-11-2026 12:00"
   },
   "cards": {
-    "total_cm": -17.2,
-    "astro_cm": -10.0,
-    "meteo_cm": -7.2,
-    "galibo_entrada_m": 1.655,
-    "galibo_salida_m": 1.646,
+    "total_cm": -19.5,
+    "astro_cm": -12.5,
+    "meteo_cm": -7.0,
+    "galibo_entrada_m": 1.678,
+    "galibo_salida_m": 1.669,
     "next_high_time": "29-10 09h",
     "next_high_cm": -4.6,
-    "next_low_time": "29-10 02h",
-    "next_low_cm": -20.0
+    "next_low_time": "29-10 17h",
+    "next_low_cm": -13.6
   },
   "series": {
     "time": [
@@ -890,10 +890,10 @@
       "historico",
       "historico",
       "historico",
-      "forecast",
-      "forecast",
-      "forecast",
-      "forecast",
+      "historico",
+      "historico",
+      "historico",
+      "historico",
       "forecast",
       "forecast",
       "forecast",
@@ -1001,30 +1001,6 @@
       "forecast"
     ],
     "mareo_time": [
-      "26-10 00h",
-      "26-10 01h",
-      "26-10 02h",
-      "26-10 03h",
-      "26-10 04h",
-      "26-10 05h",
-      "26-10 06h",
-      "26-10 07h",
-      "26-10 08h",
-      "26-10 09h",
-      "26-10 10h",
-      "26-10 11h",
-      "26-10 12h",
-      "26-10 13h",
-      "26-10 14h",
-      "26-10 15h",
-      "26-10 16h",
-      "26-10 17h",
-      "26-10 18h",
-      "26-10 19h",
-      "26-10 20h",
-      "26-10 21h",
-      "26-10 22h",
-      "26-10 23h",
       "27-10 00h",
       "27-10 01h",
       "27-10 02h",
@@ -1065,33 +1041,13 @@
       "28-10 13h",
       "28-10 14h",
       "28-10 15h",
-      "28-10 16h"
+      "28-10 16h",
+      "28-10 17h",
+      "28-10 18h",
+      "28-10 19h",
+      "28-10 20h"
     ],
     "mareo_cm": [
-      -17.6,
-      -17.3,
-      -16.1,
-      -13.9,
-      -10.6,
-      -7.9,
-      -6.6,
-      -6.1,
-      -5.1,
-      -5.3,
-      -7.2,
-      -8.8,
-      -9.8,
-      -10.6,
-      -11.2,
-      -10.0,
-      -7.7,
-      -5.5,
-      -3.8,
-      -2.9,
-      -4.3,
-      -6.8,
-      -9.4,
-      -11.6,
       -13.1,
       -14.2,
       -14.6,
@@ -1132,7 +1088,11 @@
       -6.1,
       -6.8,
       -7.6,
-      -7.8
+      -7.8,
+      -6.8,
+      -5.2,
+      -4.0,
+      -3.5
     ]
   },
   "table": [
@@ -1251,7 +1211,7 @@
       "meteo": -7.2,
       "galibo_entrada": 1.67,
       "galibo_salida": 1.661,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "29-10 01h",
@@ -1260,7 +1220,7 @@
       "meteo": -7.1,
       "galibo_entrada": 1.679,
       "galibo_salida": 1.67,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "29-10 02h",
@@ -1269,7 +1229,7 @@
       "meteo": -7.0,
       "galibo_entrada": 1.683,
       "galibo_salida": 1.674,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "29-10 03h",
@@ -1278,7 +1238,7 @@
       "meteo": -7.0,
       "galibo_entrada": 1.678,
       "galibo_salida": 1.669,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "29-10 04h",
