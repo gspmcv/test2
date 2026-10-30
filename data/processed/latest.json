@@ -1,15 +1,15 @@
 {
-  "generated_at": "30-10-2026 15:44 Madrid",
+  "generated_at": "30-10-2026 19:32 Madrid",
   "period": {
     "start": "30-10-2026 00:00",
     "end": "04-11-2026 00:00"
   },
   "cards": {
-    "total_cm": -7.9,
-    "astro_cm": -3.5,
-    "meteo_cm": -4.3,
-    "galibo_entrada_m": 1.562,
-    "galibo_salida_m": 1.553,
+    "total_cm": -11.7,
+    "astro_cm": -7.5,
+    "meteo_cm": -4.2,
+    "galibo_entrada_m": 1.6,
+    "galibo_salida_m": 1.591,
     "next_high_time": "30-10 20h",
     "next_high_cm": -11.6,
     "next_low_time": "30-10 19h",
@@ -894,10 +894,10 @@
       "historico",
       "historico",
       "historico",
-      "forecast",
-      "forecast",
-      "forecast",
-      "forecast",
+      "historico",
+      "historico",
+      "historico",
+      "historico",
       "forecast",
       "forecast",
       "forecast",
@@ -1057,7 +1057,11 @@
       "30-10 05h",
       "30-10 06h",
       "30-10 07h",
-      "30-10 08h"
+      "30-10 08h",
+      "30-10 09h",
+      "30-10 10h",
+      "30-10 11h",
+      "30-10 12h"
     ],
     "mareo_cm": [
       -14.4,
@@ -1116,7 +1120,11 @@
       -9.5,
       -6.4,
       -2.7,
-      0.7
+      0.7,
+      3.1,
+      4.4,
+      4.6,
+      4.1
     ]
   },
   "table": [
@@ -1271,7 +1279,7 @@
       "meteo": -4.2,
       "galibo_entrada": 1.579,
       "galibo_salida": 1.57,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "30-10 17h",
@@ -1280,7 +1288,7 @@
       "meteo": -4.2,
       "galibo_entrada": 1.592,
       "galibo_salida": 1.583,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "30-10 18h",
@@ -1289,7 +1297,7 @@
       "meteo": -4.2,
       "galibo_entrada": 1.599,
       "galibo_salida": 1.59,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "30-10 19h",
@@ -1298,7 +1306,7 @@
       "meteo": -4.2,
       "galibo_entrada": 1.6,
       "galibo_salida": 1.591,
-      "fuente": "forecast"
+      "fuente": "historico"
     },
     {
       "fecha": "30-10 20h",
